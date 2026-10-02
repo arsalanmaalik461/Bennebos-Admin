@@ -1,79 +1,211 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
-
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
+  <img src="docs/assets/banner.svg" alt="Bennebos Admin Banner" width="100%">
 </p>
 
-## About Laravel
+<p align="center">
+<img src="https://img.shields.io/badge/PHP-8.0%2B-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP 8">
+<img src="https://img.shields.io/badge/Laravel-9-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel 9">
+<img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+<img src="https://img.shields.io/badge/Vue.js_2-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white" alt="Vue 2">
+<img src="https://img.shields.io/badge/Bootstrap_4-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap 4">
+<img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=white" alt="Firebase">
+<img src="https://img.shields.io/badge/Stripe-008CDD?style=for-the-badge&logo=stripe&logoColor=white" alt="Stripe">
+<img src="https://img.shields.io/badge/PayPal-003087?style=for-the-badge&logo=paypal&logoColor=white" alt="PayPal">
+</p>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+> **Developed by [Arslan Malik](https://github.com/arsalanmaalik461)**
+> 📱 WhatsApp: [+92 300 8987448](https://wa.me/923008987448) · 🌐 Website: [arslanmalik.tech](https://arslanmalik.tech)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 🌟 Executive Overview
 
-## Learning Laravel
+**Bennebos Admin** is a full-featured e-commerce admin panel built on **Laravel 9** (PHP 8). It provides everything needed to run the backend of an online store from a single dashboard: product and category management, order processing, promotional banners, multi-currency support, and a plug-in **payment gateways module** covering Stripe, PayPal, Razorpay, Paystack, Flutterwave, MercadoPago, and Xendit.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+The project is built on a modular architecture using `nwidart/laravel-modules`, with dedicated CentralLogics helper libraries for products, categories, orders, banners, SMS, and translations. Customer engagement is handled through **Firebase push notifications** and **SMS notifications** (Twilio + Vonage), while the API surface is secured with **Laravel Passport**. Admin tooling includes PDF generation (DomPDF), Excel import/export, image processing, a CKEditor rich-text editor, and toast notifications.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+The repo ships deployment-ready: an `installation/` bundle with SQL database dumps, currency data, and public assets makes it possible to set the store up on shared hosting, with `index.php` and `.htaccess` at the project root.
 
-## Laravel Sponsors
+---
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## 📑 Table of Contents
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
+- [✨ Key Features & Highlights](#-key-features--highlights)
+- [🖥️ Feature Showcase](#️-feature-showcase)
+- [🏗️ System Architecture](#️-system-architecture)
+- [🚀 Quickstart & Installation Guide](#-quickstart--installation-guide)
+- [📂 Project Structure](#-project-structure)
+- [🛡️ Security & Notes](#️-security--notes)
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## ✨ Key Features & Highlights
 
-## Code of Conduct
+| Feature | Description |
+| :--- | :--- |
+| 🛍️ Product & Category Management | Full catalog management with dedicated CentralLogics helpers for products and categories |
+| 🧾 Order Management | Order processing helpers covering the full order lifecycle |
+| 🖼️ Banner Management | Promotional banner management for storefront marketing |
+| 💳 Payment Gateways | Pluggable gateways module: Stripe, PayPal, Razorpay, Paystack, Flutterwave, MercadoPago, Xendit |
+| 🔔 Firebase Push Notifications | Real-time push notifications via Firebase (`firebase-messaging-sw.js` included) |
+| 📲 SMS Notifications | Transactional SMS through Twilio and Vonage (`sms_module.php`) |
+| 🔐 API Authentication | Laravel Passport-powered API security |
+| 🧾 PDF Generation | PDF documents (e.g. invoices) via Barryvdh DomPDF |
+| 📊 Excel Import/Export | Fast Excel spreadsheet import/export |
+| 🖌️ Image Processing | Server-side image handling with Intervention Image |
+| ✍️ Rich Text Editor | CKEditor for formatted content |
+| 🍞 Toast Notifications | UI toast notifications via Laravel Toastr |
+| 🤖 Captcha Protection | gregwar/captcha form protection |
+| 🧩 Modular Architecture | `nwidart/laravel-modules` based `Modules/` directory for plug-in features |
+| 🌍 Multi-language | Built-in translation helper layer |
+| 💱 Multi-currency | Currency data bundle shipped in `installation/currency.json` |
+| 🎨 Asset Pipeline | Vue 2 + Bootstrap 4 frontend built with Laravel Mix |
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+---
 
-## Security Vulnerabilities
+## 🖥️ Feature Showcase
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### 1. Catalog & Order Management
 
-## License
+> Manage the entire storefront catalog — products, categories, promotional banners, and customer orders — through centralized helper libraries.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-f you Got any issue Must Contact on these Whatsapp Number's +923008987448 : +923193587448 Both Number Availble on Whatsapp For Run This Project U need to install Latest Android Studio.
+- `app/CentralLogics/product.php`, `category.php`, `banner.php`, `order.php` centralize catalog and order business logic
+- CKEditor-powered rich product descriptions, Intervention Image for product imagery
+- Excel import/export for bulk catalog operations
+- Order status flow backed by the database migrations in `database/`
+
+### 2. Payments & Gateways Module
+
+> A dedicated `Modules/`-based gateways architecture wired to seven payment providers out of the box.
+
+- Stripe, PayPal (REST SDK), Razorpay, Paystack, Flutterwave (LaravelRave), MercadoPago, Xendit
+- Gateway enable/disable state tracked in `modules_statuses.json`
+- Multi-currency readiness via the bundled `installation/currency.json` data
+
+### 3. Notifications & Engagement
+
+> Keep customers and admins in the loop with push and SMS notifications.
+
+- Firebase Cloud Messaging integration with `kreait/firebase-php` + `kreait/laravel-firebase`, plus a ready `firebase-messaging-sw.js` service worker
+- SMS via Twilio SDK and the Vonage notification channel, wrapped in `sms_module.php`
+- Laravel Toastr toasts for in-dashboard admin feedback
+
+---
+
+## 🏗️ System Architecture
+
+```mermaid
+graph TD
+    A[Admin Browser Dashboard<br/>Vue 2 + Bootstrap 4] -->|HTTP / Blade + API| B[Laravel 9 Routes]
+    C[Storefront / Mobile App] -->|Passport-secured API| B
+    B --> D[Controllers + CentralLogics Helpers<br/>product · category · banner · order<br/>translation · helpers]
+    D --> E[MySQL Database]
+    D --> F[Gateways Module<br/>Stripe · PayPal · Razorpay<br/>Paystack · Flutterwave<br/>MercadoPago · Xendit]
+    D --> G[Firebase Push<br/>kreait/laravel-firebase]
+    D --> H[SMS: Twilio + Vonage]
+    D --> I[Tooling<br/>DomPDF · Fast Excel<br/>Intervention Image · Toastr<br/>CKEditor · Captcha]
+    F --> J[Payment Provider APIs]
+    G --> K[Customer Devices]
+    H --> L[Customer Phones]
+```
+
+---
+
+## 🚀 Quickstart & Installation Guide
+
+### Prerequisites
+
+- PHP `^8.0` with `ext-curl`, `ext-json`, `ext-zip`
+- Composer
+- MySQL
+- Node.js + npm (for the Laravel Mix asset build)
+
+### Step-by-Step Installation
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/arsalanmaalik461/Bennebos-Admin.git
+cd Bennebos-Admin
+
+# 2. Install PHP dependencies
+composer install
+
+# 3. Configure the environment
+cp .env.example .env
+php artisan key:generate
+
+# 4. Set your database credentials in .env, then run migrations
+php artisan migrate
+
+# 5. (Alternative) Import one of the bundled SQL dumps from installation/
+#    (e.g. database.sql, database_v7.1.sql) for a pre-seeded setup,
+#    including the currency data in installation/currency.json
+
+# 6. Install frontend dependencies and build assets
+npm install
+npm run prod   # or: npm run dev for development
+
+# 7. Serve the application
+php artisan serve
+# visit http://localhost:8000
+```
+
+For shared-hosting deployments, point the web root at the project root — `index.php` and `.htaccess` are provided there.
+
+---
+
+## 📂 Project Structure
+
+```
+Bennebos-Admin/
+├── app/
+│   ├── CentralLogics/        # Domain helpers: banner, category, product,
+│   │                         #   order, sms_module, translation, helpers
+│   ├── Http/                 # Controllers, middleware
+│   ├── Library/              # Constant.php, Responses.php
+│   └── Models/               # Eloquent models
+├── bootstrap/                # Laravel bootstrap
+├── config/                   # Laravel configuration
+├── database/                 # Migrations, seeders, factories
+├── docs/
+│   └── assets/
+│       └── banner.svg        # Project banner
+├── installation/             # Installer bundle: SQL dumps (database*.sql),
+│                             #   currency.json, public.zip, route activators
+├── Modules/                  # nwidart/laravel-modules plug-in modules
+├── public/                   # Web-accessible assets
+├── resources/                # Blade views, Vue components, lang files
+├── routes/                   # Web + API routes
+├── storage/                  # Logs, cache, uploads
+├── stubs/                    # Module stubs
+├── tests/                    # PHPUnit test suite
+├── .env.example              # Environment template
+├── artisan                   # Laravel CLI
+├── composer.json             # PHP dependencies (Laravel 9, Passport, Firebase, ...)
+├── firebase-messaging-sw.js  # Firebase push service worker
+├── index.php / .htaccess     # Shared-hosting entry point at project root
+├── package.json              # Vue 2 + Bootstrap 4 via Laravel Mix
+├── phpunit.xml               # PHPUnit config
+├── server.php                # Dev server entry
+├── webpack.mix.js            # Mix asset build config
+└── README.md
+```
+
+---
+
+## 🛡️ Security & Notes
+
+- **Never commit real credentials**: `.env` is gitignored — always start from `.env.example` and keep production keys (payment gateway secrets, Firebase config, Twilio/Vonage tokens, Passport keys) out of the repo.
+- **Run `php artisan key:generate`** after cloning so sessions, cookies, and encrypted data use a fresh application key.
+- **Regenerate Passport keys** (`php artisan passport:install`) on every fresh deployment instead of reusing keys from another environment.
+- **Protect the `installation/` SQL dumps**: delete or restrict the `installation/` directory on production so database backups cannot be downloaded.
+- **Queues for notifications**: route Firebase push and SMS jobs through a queue worker in production so slow providers never block requests.
+- **Validate file uploads**: Intervention Image is configured for processing — enforce mime-type and size validation on all user uploads before processing.
+- **Captcha on public forms**: the bundled `gregwar/captcha` protects admin-facing forms; keep it enabled on login and registration routes.
+- **Keep dependencies current**: run `composer update` / `npm audit` periodically and review advisories for gateway SDKs before upgrading.
+
+---
+
+<p align="center">
+  <sub>Developed with ❤️ by <a href="https://github.com/arsalanmaalik461">Arslan Malik</a> · 📱 <a href="https://wa.me/923008987448">WhatsApp: +92 300 8987448</a> · 🌐 <a href="https://arslanmalik.tech">arslanmalik.tech</a></sub>
+</p>
